@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+data/kor_fin_news.sqlite
+data/chromadb/
+data/reference/
+logs/
+debug_deepseek.py
+setup_deepseek_login.py
+llm/claude_cli_chat.py.backup
+.claude/settings.local.json

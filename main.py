@@ -144,6 +144,11 @@ def main():
     schedule.every().day.at(schedule_time, "Asia/Seoul").do(run_pipeline)
     logger.info("Scheduled daily run at %s KST. Waiting...", schedule_time)
 
+    # 주간 인사이트 리포트 — 매주 월요일 08:30 KST
+    from weekly_reporter import run_weekly_report
+    schedule.every().monday.at("08:30", "Asia/Seoul").do(run_weekly_report)
+    logger.info("Scheduled weekly report on Monday 08:30 KST")
+
     try:
         while True:
             schedule.run_pending()

@@ -11,3 +11,61 @@ debug_deepseek.py
 setup_deepseek_login.py
 llm/claude_cli_chat.py.backup
 .claude/settings.local.json
+
+# ─── refactor snapshot 2026-07-25 (Claude 추가) ───
+# 가상환경 / 빌드
+venv/
+.venv/
+venv_*/
+*_venv/
+__pycache__/
+*.py[cod]
+node_modules/
+build/
+.dart_tool/
+
+# 브라우저 프로필 = 살아있는 로그인 세션. 커밋 금지, 디스크엔 유지
+*_chrome_profile/
+*_browser_data/
+*claude_profile/
+user_data/
+.chrome-*/
+
+# 산출물 (재생성 가능)
+output/
+outputs/
+out/
+runs/
+materials/
+downloads/
+downloaded_images/
+temp/
+*.mp4
+*.mp3
+*.wav
+*.mov
+
+# 재생성 가능한 DB / 로그
+*.sqlite3
+chromadb/
+logs/
+*.log
+last_run.txt
+last_response.html
+*.bak_*
+*.bak.json
+
+# 비밀 — 디스크엔 두되 절대 커밋하지 않음
+.env
+.env.*
+!.env.example
+secrets/
+client_secret*.json
+*token*.json
+*credential*.json
+*.key
+*.pem
+config.ini
+!config.ini.example
+
+# ⛔ checkpoints/ 는 무시하지 않음 — 모델이 아니라 에피소드 제작 재개 상태라 보존

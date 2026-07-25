@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "webgl",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["C:/pjkgs_projects/joseon_musa/tools/serve_webgl.py", "8123"],
+      "port": 8123
+    }
+  ]
+}

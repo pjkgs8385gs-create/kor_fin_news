@@ -7,6 +7,7 @@ Wants=network-online.target
 Type=simple
 User=opc
 Group=opc
+EnvironmentFile=-/etc/claude-token.env
 WorkingDirectory=/home/opc/kor_fin_news
 Environment="PYTHONUNBUFFERED=1"
 Environment="PATH=/home/opc/.local/bin:/usr/local/bin:/usr/bin:/bin"
